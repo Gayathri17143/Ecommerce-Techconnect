@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9931ad3a.css",
+    "main.js": "/static/js/main.fcba61a0.js",
+    "static/js/453.75dabde4.chunk.js": "/static/js/453.75dabde4.chunk.js",
+    "static/media/banner.webp": "/static/media/banner.646c22f910e2a727f705.webp",
+    "static/media/mob-discount.png": "/static/media/mob-discount.0454c74da8d8540688a7.png",
+    "static/media/audio-speaker.png": "/static/media/audio-speaker.525426594f8ab7d5af35.png",
+    "static/media/smart-watch.png": "/static/media/smart-watch.a3fd991a50ed0f25cde2.png",
+    "static/media/macbookbanner.jpg": "/static/media/macbookbanner.4c0c0ea8884ea9cb5a67.jpg",
+    "static/media/iPhonebanner.jpg": "/static/media/iPhonebanner.745e89aa705fc1233934.jpg",
+    "static/media/logo.png": "/static/media/logo.462f53c2d0704dd2cef3.png",
+    "static/media/smart.png": "/static/media/smart.39bac74e951bee599ef4.png",
+    "static/media/webcam.png": "/static/media/webcam.320fc9b1c4fdb5e43c44.png",
+    "static/media/headset.png": "/static/media/headset.76ff9a03d70d7eb8200d.png",
+    "index.html": "/index.html",
+    "main.9931ad3a.css.map": "/static/css/main.9931ad3a.css.map",
+    "main.fcba61a0.js.map": "/static/js/main.fcba61a0.js.map",
+    "453.75dabde4.chunk.js.map": "/static/js/453.75dabde4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9931ad3a.css",
+    "static/js/main.fcba61a0.js"
+  ]
+}
