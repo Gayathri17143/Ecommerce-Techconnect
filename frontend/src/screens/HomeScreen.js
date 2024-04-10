@@ -20,7 +20,8 @@ import { useDispatch, useSelector } from "react-redux";
 
 /* ACTION CREATORS */
 import { listProducts } from "../actions/productActions";
-
+import  Brandlogos from "../components/Brandlogos";
+import Services from "../components/Services";
 function HomeScreen({ history }) {
   const dispatch = useDispatch();
 
@@ -42,12 +43,15 @@ function HomeScreen({ history }) {
     <>
     <Bannercarousel />
                   <ImageGrid />
-                  
+                  <Brandlogos/>
+                
+                  <Services/>
                   <TrendingProducts />
     <div>
       {/* {!keyword && <ProductCarousel />} */}
 
       <div style={{fontSize:'25px',color:"#000",fontWeight:'600'}}>Latest Products</div>
+    
 
       {loading ? (
         <Loader />
@@ -69,6 +73,7 @@ function HomeScreen({ history }) {
         </div>
       )}
     </div>
+    
     </>
   );
 }

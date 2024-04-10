@@ -8,19 +8,19 @@ const ImageGrid = () => {
   return (
     <div className="grid-container" >
       <div className="grid-item">
-        <img src={Image1} alt="Image 1" />
+        <img src={Image1} alt="text" />
         <div className="image-text">Audio speaker</div>
         <a href='/#' className="image-text1">Shop Now</a>
         
        
       </div>
       <div className="grid-item">
-        <img src={Image2} alt="Image 2" />
+        <img src={Image2} alt="text" />
         <div className="image-text">Smart Watches </div>
         <a href='/#' className="image-text1">Shop Now</a>
       </div>
       <div className="grid-item">
-        <img src={Image3} alt="Image 3" />
+        <img src={Image3} alt="text" />
         <div className="image-text">Biggest Discount </div>
         <a href='/#' className="image-text1">Shop Now</a>
       </div>

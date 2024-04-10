@@ -2,7 +2,9 @@
 main {
   min-height: 80vh;
 }
-
+body{
+  background-color: #99a4af70!important;
+}
 /* Product.js */
 h3 {
   padding: 1rem 0;
