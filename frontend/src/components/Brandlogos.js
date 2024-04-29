@@ -12,8 +12,9 @@ import Image9 from '../assets/nokia.png'
 
 const Gallery = () => {
   return (
-    <div style={{ margin: "20px" }}>
-      <Carousel cols={4} rows={2} gap={2} loop>
+     
+    <div className="container" style={{padding: "30px",background:"#00274b3d",    border: "1px solid #220a0a" }}>
+      <Carousel cols={5} rows={1} gap={2} loop>
         <Carousel.Item>
           <a href="/" target='_blank'>
           <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
@@ -51,40 +52,13 @@ const Gallery = () => {
         <a href="/" target='_blank'>
           <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image9} alt="text" />
           </a> </Carousel.Item>
-        <Carousel.Item>
-        <a href="/" target='_blank'>
-          <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
-          </a></Carousel.Item>
-        <Carousel.Item>
-        <a href="/" target='_blank'>
-          <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
-          </a> </Carousel.Item>
-        <Carousel.Item>
-        <a href="/" target='_blank'>
-          <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
-          </a></Carousel.Item>
-        <Carousel.Item>
-        <a href="/" target='_blank'>
-          <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
-          </a></Carousel.Item>
-        <Carousel.Item>
-        <a href="/" target='_blank'>
-          <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
-          </a></Carousel.Item>
-        <Carousel.Item>
-        <a href="/" target='_blank'>
-          <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
-          </a></Carousel.Item>
-        <Carousel.Item>
-        <a href="/" target='_blank'>
-          <img style={{ width: "50%", display: "block", marginRight: "auto", marginLeft: "auto" }} src={Image1} alt="text" />
-          </a></Carousel.Item>
+       
 
 
         {/* ... */}
       </Carousel>
     </div>
-
+     
   )
 }
 export default Gallery;

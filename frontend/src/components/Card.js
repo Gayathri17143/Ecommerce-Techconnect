@@ -1,11 +1,11 @@
 import React from "react";
- 
-  
-const Card = ({ item }) => {            
-           // destructuring props
+
+
+const Card = ({ item }) => {
+  // destructuring props
   return (
     <>
-  
+
       <div className="container-fluid">
 
         <div className="row justify-content-center">
@@ -18,7 +18,7 @@ const Card = ({ item }) => {
                 <div className="card-img-top text-center">
                   <img src={Val.img} alt={Val.title} className="photo w-75" />
                 </div>
-                <div className="card-body">
+                <div className="card-body" style={{ textAlign: "center" }}>
                   <div className="card-title fw-bold fs-4">
                     {Val.title} &nbsp;&nbsp;&nbsp;&nbsp;--&nbsp;&nbsp;
                     {Val.price}
@@ -33,5 +33,5 @@ const Card = ({ item }) => {
     </>
   );
 };
- 
+
 export default Card;

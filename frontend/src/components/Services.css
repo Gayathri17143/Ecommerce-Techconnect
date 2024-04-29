@@ -2,6 +2,7 @@
 .wrapper {
   text-align: center;
   margin: 20px;
+  /* border:1px solid #ccc; */
 }
 
 .wrapper .img {
@@ -35,8 +36,8 @@
   justify-content: center;
   align-items: center;
   display: flex !important;
-  margin: 20px;
-  /* border: 1px solid #ccc; */
+  
+  border: 1px solid #ccc;
   border-radius: 10px;
 }
 h3 {

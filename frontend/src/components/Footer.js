@@ -1,5 +1,5 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.css";  
 const Footer = () => {
   return (
     <div className="foot-container pad">
@@ -18,12 +18,13 @@ const Footer = () => {
               <i class="fa-regular fa-envelope">
                 <div className="foot-text">info@techconnect.com</div>
               </i>
-              {/* <i class="fa-regular fa-clock">
-                <div className="foot-text">Mon-Fri:10:00-18:00 PM</div>
-              </i> */}
+              
+                
+               
             </a>
           </li>
         </ul>
+         
       </div>
       <div className="foot-item">
         <ul className="menu">
@@ -89,7 +90,7 @@ const Footer = () => {
             </span>
           </li>
         </ul>
-
+        
         <div className="foot-text1">
           TechConnect Internet Private Limited,
           Buildings Alyssa, Begonia &

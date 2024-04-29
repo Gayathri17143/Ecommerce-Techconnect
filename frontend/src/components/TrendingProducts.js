@@ -12,7 +12,7 @@ import { Container } from 'react-bootstrap';
 const SimpleCarousel = () => {
 
     const settings = {
-        dots: true,
+        // dots: true,
         infinite: true,
         speed: 500,
 

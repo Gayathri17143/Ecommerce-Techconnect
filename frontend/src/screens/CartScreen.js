@@ -12,6 +12,7 @@ import {
   Button,
   Card,
   Form,
+  Container,
 } from "react-bootstrap";
 
 /* COMPONENTS */
@@ -54,9 +55,11 @@ function CartScreen({ match, location, history }) {
   };
 
   return (
-    <Row>
-      <Col md={8}>
-        <h1>Shopping Cart</h1>
+    <Container>
+       <Row>
+       <h4 style={{padding:"20px"}}>Shopping Cart</h4>
+      <Col md={9}>
+      
         {cartItems.length === 0 ? (
           <Message variant="info">
             Your cart is empty. <Link to="/">Go Back</Link>
@@ -66,7 +69,7 @@ function CartScreen({ match, location, history }) {
             {cartItems.map((item) => (
               <ListGroup.Item key={item.product}>
                 <Row>
-                  <Col md={2}>
+                  <Col md={3}>
                     <Image src={item.image} alt={item.name} fluid rounded />
                   </Col>
 
@@ -74,9 +77,9 @@ function CartScreen({ match, location, history }) {
                     <Link to={`/product/${item.product}`}>{item.name}</Link>
                   </Col>
 
-                  <Col>₹{item.price}</Col>
+                  <Col md={2}>₹{item.price}</Col>
 
-                  <Col md={3}>
+                  <Col md={2}>
                     <Form.Control
                       as="select"
                       value={item.qty}
@@ -94,7 +97,7 @@ function CartScreen({ match, location, history }) {
                     </Form.Control>
                   </Col>
 
-                  <Col md={1}>
+                  <Col md={2}>
                     <Button
                       type="button"
                       variant="light"
@@ -110,7 +113,7 @@ function CartScreen({ match, location, history }) {
         )}
       </Col>
 
-      <Col md={4}>
+      <Col md={3}>
         <Card>
           <ListGroup variant="flush">
             <ListGroup.Item>
@@ -138,6 +141,8 @@ function CartScreen({ match, location, history }) {
         </Card>
       </Col>
     </Row>
+    </Container>
+   
   );
 }
 

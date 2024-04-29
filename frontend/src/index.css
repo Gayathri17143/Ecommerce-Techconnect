@@ -1,9 +1,12 @@
 /* App.js */
 main {
   min-height: 80vh;
+  background: #e9ecef;
 }
 body{
-  background-color: #99a4af70!important;
+  /* background-color: #99a4af70!important; */
+  width: 100%!important;
+  height: auto;
 }
 /* Product.js */
 h3 {

@@ -7,7 +7,7 @@ const navBarData = [
         label: "Mobiles",
         submenu: [
             { label: "IPhones", url: "/iphones" },
-            { label: "Smart Phones", url: "/Categories" },
+            { label: "Smart Phones", url: "/smartphones" },
             { label: "Basic Phones", url: "/basicphones" },
             {
                 label: "Accessories",
@@ -16,7 +16,7 @@ const navBarData = [
                     { label: "Chargers", url: "/Accessories/Chargers" },
                     { label: "Adapters", url: "/Accessories/Adapters" },
                     { label: "Cables & Connectors", url: "/Accessories/Cables-Connectors" }
-                ]
+                ],
             },
             { label: "Powerbanks", url: "/Powerbanks" },
             {
@@ -24,7 +24,7 @@ const navBarData = [
                 url: "/Cameras",
                 submenu: [
                     { label: "WebCamera", url: "/Cameras/WebCamera" }
-                ]
+                ],
             }
         ]
     },
@@ -48,7 +48,7 @@ const navBarData = [
                 submenu: [
                     { label: "IPad", url: "/tab-ipad/IPad" },
                     { label: "Tab", url: "/tab-ipad/Tab" }
-                ]
+                ],
             }
         ]
     },
@@ -108,8 +108,8 @@ const navBarData = [
 ];
 
 const App = () => {
-    const menuShow = (menuItems) => {
-        return menuItems.map((item, index) => {
+    const menuShow = (mItems) => {
+        return mItems.map((item, index) => {
             if (item.submenu) {
                 return (
                     <NavDropdown title={item.label} key={index} id={`nav-dropdown-${index}`} className="dropdown-menu-dark dropend">
@@ -131,7 +131,14 @@ const App = () => {
 
     return (
         <Navbar bg="light" expand="lg" variant="light">
-           
+  <Navbar.Brand href="#home">
+                <h1
+                    style={{
+                        color: "green",
+                    }}>
+
+                </h1>
+            </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" style={navStyle}>

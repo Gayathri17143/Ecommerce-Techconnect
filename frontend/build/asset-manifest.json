@@ -1,27 +1,39 @@
 {
   "files": {
-    "main.css": "/static/css/main.8ca7eea6.css",
-    "main.js": "/static/js/main.255c5046.js",
+    "main.css": "/static/css/main.4f087779.css",
+    "main.js": "/static/js/main.3bca4bd3.js",
     "static/js/453.75dabde4.chunk.js": "/static/js/453.75dabde4.chunk.js",
     "static/media/banner.webp": "/static/media/banner.646c22f910e2a727f705.webp",
     "static/media/mob-discount.png": "/static/media/mob-discount.0454c74da8d8540688a7.png",
     "static/media/audio-speaker.png": "/static/media/audio-speaker.525426594f8ab7d5af35.png",
     "static/media/smart-watch.png": "/static/media/smart-watch.a3fd991a50ed0f25cde2.png",
     "static/media/macbookbanner.jpg": "/static/media/macbookbanner.4c0c0ea8884ea9cb5a67.jpg",
+    "static/media/news-samsung.webp": "/static/media/news-samsung.3ef6b2952a6be6e171a1.webp",
+    "static/media/news-Fire-Boltt.webp": "/static/media/news-Fire-Boltt.745408954432d8115bae.webp",
     "static/media/iPhonebanner.jpg": "/static/media/iPhonebanner.745e89aa705fc1233934.jpg",
+    "static/media/news-tws-earbuds.webp": "/static/media/news-tws-earbuds.c4b628f610dfe77ae79c.webp",
+    "static/media/news-realme.webp": "/static/media/news-realme.db0d1b3886eb37ca3d48.webp",
+    "static/media/news-apple.webp": "/static/media/news-apple.1cfd68d65d980c38db25.webp",
     "static/media/smart.png": "/static/media/smart.39bac74e951bee599ef4.png",
     "static/media/7.png": "/static/media/7.e6c78629c0ae0265b393.png",
     "static/media/9.png": "/static/media/9.b5d79c3a8598f2803561.png",
+    "static/media/Apple-iphone-15-pro-max-black.png": "/static/media/Apple-iphone-15-pro-max-black.0b24f4270eaaf39ce9fd.png",
     "static/media/webcam.png": "/static/media/webcam.320fc9b1c4fdb5e43c44.png",
     "static/media/headset.png": "/static/media/headset.76ff9a03d70d7eb8200d.png",
     "static/media/5.png": "/static/media/5.ac4a6b1b052475aef692.png",
+    "static/media/Samsung-galaxy-s24-5g-onyx-black.png": "/static/media/Samsung-galaxy-s24-5g-onyx-black.b0924a4b5268f8276331.png",
+    "static/media/samsung-galaxy-s22-ultra-5g-phantom-white.png": "/static/media/samsung-galaxy-s22-ultra-5g-phantom-white.2a987e5aa6d677507544.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "index.html": "/index.html",
-    "main.8ca7eea6.css.map": "/static/css/main.8ca7eea6.css.map",
-    "main.255c5046.js.map": "/static/js/main.255c5046.js.map",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "main.4f087779.css.map": "/static/css/main.4f087779.css.map",
+    "main.3bca4bd3.js.map": "/static/js/main.3bca4bd3.js.map",
     "453.75dabde4.chunk.js.map": "/static/js/453.75dabde4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8ca7eea6.css",
-    "static/js/main.255c5046.js"
+    "static/css/main.4f087779.css",
+    "static/js/main.3bca4bd3.js"
   ]
 }

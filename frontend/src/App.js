@@ -19,6 +19,8 @@ import UserEditScreen from "./screens/UserEditScreen";
 import ProductListScreen from "./screens/ProductListScreen";
 import ProductEditScreen from "./screens/ProductEditScreen";
 import OrderListScreen from "./screens/OrderListScreen";
+import News from "./components/News";
+import NewsProductPage from "./components/NewsProductPage";
 import React  from 'react';
 // import Bannercarousel from "./components/Bannercarousel";
 import Navigationbar from "./components/Navigationbar";
@@ -28,9 +30,10 @@ import Navigationbar from "./components/Navigationbar";
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 // import Navbar from './Navbar';
 import Categories from "./components/Categories";
-
-
-// import Home from "./components/Home";
+import Filter from "./components/Filter"
+import Productpage from "./components/Productpage";
+ 
+ 
 function App() {
   return (
     <>
@@ -38,13 +41,13 @@ function App() {
     <Router>
       <Header />
       <Navigationbar/>
-      {/* <Navbar /> */}
-      {/* <Bannercarousel/> */}
-     {/* <ImageGrid/> */}
-      <Container>
-        <main className="py-3">
+      
+        <main className="">
           <Route exact path="/" component={HomeScreen}  /> 
-          <Route path="/categories" component={Categories} />
+          <Route path="/smartphones" component={Filter} />
+          <Route path="/News" component={News} />
+          <Route path="/Hero/:id" component={Productpage} />
+          <Route path="/NewsProductPage" component={NewsProductPage} />
           <Route path="/login" component={LoginScreen} />
 
           <Route path="/register" component={RegisterScreen} />
@@ -73,8 +76,7 @@ function App() {
 
           <Route path="/admin/orderlist" component={OrderListScreen} />
         </main>
-      </Container>
-      {/* <TrendingProducts/> */}
+      
       <Footer />
     </Router>
     </>

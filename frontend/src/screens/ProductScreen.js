@@ -11,7 +11,7 @@ import {
   ListGroup,
   Button,
   Card,
-  Form,
+  Form,Container
 } from "react-bootstrap";
 
 /* COMPONENTS */
@@ -78,7 +78,7 @@ function ProductScreen({ match, history }) {
   };
 
   return (
-    <div>
+    <Container>
       <Link to="/" className="btn btn-light my-3">
         Go Back
       </Link>
@@ -89,12 +89,10 @@ function ProductScreen({ match, history }) {
         <Message variant="danger">{error}</Message>
       ) : (
         <div>
-          <Row>
-            <Col md={6}>
+          <Row style={{background:"#fff",padding:"30px"}}>
+            <Col md={6} >
               <Image src={product.image} alt={product.name} fluid />
-            </Col>
-
-            <Col md={3}>
+            
               <ListGroup variant="flush">
                 <ListGroup.Item>
                   <h3>{product.name}</h3>
@@ -114,9 +112,7 @@ function ProductScreen({ match, history }) {
                   Description: {product.description}
                 </ListGroup.Item>
               </ListGroup>
-            </Col>
-
-            <Col>
+             
               <Card>
                 <ListGroup variant="flush">
                   <ListGroup.Item>
@@ -173,9 +169,7 @@ function ProductScreen({ match, history }) {
                 </ListGroup>
               </Card>
             </Col>
-          </Row>
-
-          <Row>
+          
             <Col md={6}>
               <h4 className="mt-3">Reviews</h4>
 
@@ -257,7 +251,7 @@ function ProductScreen({ match, history }) {
           </Row>
         </div>
       )}
-    </div>
+    </Container>
   );
 }
 

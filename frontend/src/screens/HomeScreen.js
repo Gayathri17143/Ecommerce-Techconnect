@@ -1,13 +1,13 @@
 import React, { useEffect } from "react";
 
 /* REACT-BOOTSTRAP */
-import { Row, Col } from "react-bootstrap";
+import { Row, Col, Container } from "react-bootstrap";
 
 /* COMPONENTS */
 import Bannercarousel from "../components/Bannercarousel";
- 
+
 import TrendingProducts from "../components/TrendingProducts";
- 
+
 import ImageGrid from "../components/ImageGrid";
 import Product from "../components/Product";
 import Loader from "../components/Loader";
@@ -17,11 +17,13 @@ import Paginate from "../components/Paginate";
 
 /* REACT - REDUX */
 import { useDispatch, useSelector } from "react-redux";
-
+import Newsletter from "../components/Newsletter";
 /* ACTION CREATORS */
 import { listProducts } from "../actions/productActions";
-import  Brandlogos from "../components/Brandlogos";
+import Brandlogos from "../components/Brandlogos";
 import Services from "../components/Services";
+import Productpage from "../components/Productpage";
+// import Categories from "../components/Categories";
 function HomeScreen({ history }) {
   const dispatch = useDispatch();
 
@@ -41,39 +43,44 @@ function HomeScreen({ history }) {
 
   return (
     <>
-    <Bannercarousel />
-                  <ImageGrid />
-                  <Brandlogos/>
-                
-                  <Services/>
-                  <TrendingProducts />
-    <div>
-      {/* {!keyword && <ProductCarousel />} */}
-
-      <div style={{fontSize:'25px',color:"#000",fontWeight:'600'}}>Latest Products</div>
-    
-
-      {loading ? (
-        <Loader />
-      ) : error ? (
-        <Message variant="danger">{error}</Message>
-      ) : (
+      <Bannercarousel />
+      <ImageGrid />
+      {/* <Hero /> */}
+     
+      <Container>
         <div>
-          <Row>
-            {products.map((product) => {
-              return (
-                <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
-                  <Product product={product} />
-                </Col>
-              );
-            })}
-          </Row>
+          {/* {!keyword && <ProductCarousel />} */}
 
-          <Paginate page={page} pages={pages} keyword={keyword} />
+          <div style={{ fontSize: '27px', color: "#000", fontWeight: '600', paddingTop: "30px" }}>Latest Products</div>
+
+
+          {loading ? (
+            <Loader />
+          ) : error ? (
+            <Message variant="danger">{error}</Message>
+          ) : (
+            <div>
+              <Row>
+                {products.map((product) => {
+                  return (
+                    <Col key={product._id} sm={12} md={6} lg={4} xl={3}>
+                      <Product product={product} />
+                    </Col>
+                  );
+                })}
+              </Row>
+
+              <Paginate page={page} pages={pages} keyword={keyword} />
+            </div>
+          )}
         </div>
-      )}
-    </div>
-    
+      </Container>
+      <Brandlogos />
+          {/* <Categories/> */}
+     
+      <TrendingProducts />
+      <Services />
+      <Newsletter/>
     </>
   );
 }
